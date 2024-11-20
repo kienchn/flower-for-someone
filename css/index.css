@@ -109,3 +109,28 @@ a {
   fill: white;
   transform: scale(1.2);
 }
+
+/* Apply background image to the body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://th.bing.com/th/id/R.be648984a8b42c11cc7843fb5f74e7ac?rik=5dF4trRca4diXg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fNight-sky-wallpaper-photos-hd-wallpapers.jpg&ehk=6D2a0lUUgPJAsM%2bDzTbliqqiLyeI82K%2bHO2T3RZyoVE%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover; /* Ensures the image covers the full screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  color: white; /* Adjust the text color for visibility */
+}
+
+/* If you want the background on the night div specifically */
+.night {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path-to-your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensures other content is on top of the background */
+}
